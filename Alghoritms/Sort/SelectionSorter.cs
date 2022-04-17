@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace Alghoritms.Sort
 {
+    
     public class SelectionSorter<T>
     {
+        /// <summary>
+        /// Выполняет сортировку слиянием.
+        /// </summary>
         public T[] Sort(T[] array, IComparer<T> comparer)
         {
             for (int i = 0; i < array.Length; i++)
