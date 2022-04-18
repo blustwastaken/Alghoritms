@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Alghoritms.Sort
+﻿namespace Alghoritms.Sort
 {
     
     public class SelectionSorter<T>
@@ -12,7 +6,7 @@ namespace Alghoritms.Sort
         /// <summary>
         /// Выполняет сортировку слиянием.
         /// </summary>
-        public T[] Sort(T[] array, IComparer<T> comparer)
+        public IEnumerable<T> Sort(T[] array, IComparer<T> comparer)
         {
             for (int i = 0; i < array.Length; i++)
             {

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Alghoritms.Sort
+﻿namespace Alghoritms.Sort
 {
     /// <summary>
     ///     Class that implements bubble sort algorithm.
@@ -12,7 +6,7 @@ namespace Alghoritms.Sort
     /// <typeparam name="T">Type of array element.</typeparam>
     public class BubbleSorter<T>
     {
-        public T[] Sort(T[] array, IComparer<T> comparer)
+        public IEnumerable<T> Sort(T[] array, IComparer<T> comparer)
         {
             for(int i = 0; i < array.Length - 1; i++)
                 for(int j = 0; j < array.Length - i - 1; j++)
